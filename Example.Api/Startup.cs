@@ -26,6 +26,8 @@ namespace Example.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // Add database.
+
+            // "dotnet ef migrations add Initial" does not detect "Example.Database" (.NET Standard 2.0) nor "Example.DatabaseCore" (.NET Core 2.0).
             services.AddDbContextPool<DatabaseContext>(
                 builder => builder.UseMySql(Configuration.GetConnectionString("Default"),
                     optionsBuilder => optionsBuilder.MigrationsAssembly("Example.Database"))

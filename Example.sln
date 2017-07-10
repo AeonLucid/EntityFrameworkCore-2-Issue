@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26621.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Api", "Example.Api\Example.Api.csproj", "{7DC7CDC4-D9F9-465D-8663-324FEFDD7643}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Api", "Example.Api\Example.Api.csproj", "{7DC7CDC4-D9F9-465D-8663-324FEFDD7643}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Database", "Example.Database\Example.Database.csproj", "{28CB01C0-7E58-4CF9-B82F-FD27DE36D01C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Database", "Example.Database\Example.Database.csproj", "{28CB01C0-7E58-4CF9-B82F-FD27DE36D01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.DatabaseCore", "Example.DatabaseCore\Example.DatabaseCore.csproj", "{46847814-4D51-4FD6-BF0F-7A8888A59E3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{28CB01C0-7E58-4CF9-B82F-FD27DE36D01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28CB01C0-7E58-4CF9-B82F-FD27DE36D01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28CB01C0-7E58-4CF9-B82F-FD27DE36D01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46847814-4D51-4FD6-BF0F-7A8888A59E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46847814-4D51-4FD6-BF0F-7A8888A59E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46847814-4D51-4FD6-BF0F-7A8888A59E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46847814-4D51-4FD6-BF0F-7A8888A59E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
