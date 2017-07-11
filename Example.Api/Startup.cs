@@ -1,4 +1,4 @@
-﻿using Example.Database;
+﻿using Example.DatabaseCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -29,8 +29,7 @@ namespace Example.Api
 
             // "dotnet ef migrations add Initial" does not detect "Example.Database" (.NET Standard 2.0) nor "Example.DatabaseCore" (.NET Core 2.0).
             services.AddDbContextPool<DatabaseContext>(
-                builder => builder.UseMySql(Configuration.GetConnectionString("Default"),
-                    optionsBuilder => optionsBuilder.MigrationsAssembly("Example.Database"))
+                builder => builder.UseSqlite(Configuration.GetConnectionString("Default"))
             );
 
             // Add framework services.
